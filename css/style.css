@@ -1,0 +1,29 @@
+.box {
+  color: #fe33ac;
+  border-color: #fdcdea;
+}
+.box div {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  margin: 50px 0;
+}
+.foto-perfil {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  position: absolute;
+  right: 0px;
+}
+.cabecalho {
+  background-color: #EEEEEE;
+  height: 120px;
+}
+.nome-cabecalho {
+  padding-top: 20px;
+}
