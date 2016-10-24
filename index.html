@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body id="inicio">
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -27,22 +27,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Felipe Ronchi Paes</a>
+                <a class="navbar-brand" href="#inicio">Felipe Ronchi Paes</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Informações Pessoais</a>
+                        <a href="#info">Informações Pessoais</a>
                     </li>
                     <li>
-                        <a href="#">Formação Acadêmica</a>
+                        <a href="#formacao">Formação Acadêmica</a>
                     </li>
                     <li>
-                        <a href="#">Experiência Profissional</a>
+                        <a href="#experiencia">Experiência Profissional</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +73,7 @@
 
         <hr>
 
-        <div class="row">
+        <div id="info" class="row">
             <div class="col-lg-12">
                 <h1>Informações Pessoais</h1>
                 <div class="col-lg-6">
@@ -84,6 +84,108 @@
                 <div class="col-lg-6">
                     <h4>Telefone: (48) 99918-4588</h4>
                     <h4>Email: ronchipaes@yahoo.com</h4>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="formacao" class="row">
+            <div class="col-lg-12">
+                <h1>Formação Acadêmica</h1>
+                <div class="col-lg-6">
+                    <h4>Ensino Fundamental: Escola Técnica da SATC</h4>
+                    <h4>Ensino Médio: Escola Técnica da SATC</h4>
+                    <h4>Ensino Superior: Engenharia da Computação - Faculdade SATC</h4>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Formação Complementar</h1>
+                <div class="col-lg-12">
+                    <p>
+                        <h4>Curso: Especificação e Aplicação de Inversores de Freqüência e Soft-Starter</h4>
+                        <h4>Entidade: Novalíder</h4>
+                        <h4>Carga Horária: 16 Horas</h4>
+                        <h4>Período: 24 a 29/06/2002</h4>
+                    </p>
+
+                    <p class="espaco-paregrafo">
+                        <h4>Curso: Eletrônica da Computação</h4>
+                        <h4>Entidade: SENAC</h4>
+                        <h4>Carga Horária: 60 Horas</h4>
+                        <h4>Período: 10/01/2004 a 13/03/2004</h4>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="experiencia" class="row">
+            <div class="col-lg-12">
+                <h1>Experiência Profissional</h1>
+                <div class="col-lg-6">
+                    <h4>Data de Nascimento: 06/11/1984</h4>
+                    <h4>Endereço: Avenida Getúlio Vargas Centro, Criciúma - SC</h4>
+                    <h4>Naturalidade: Brasileiro</h4>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Telefone: (48) 99918-4588</h4>
+                    <h4>Email: ronchipaes@yahoo.com</h4>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Participação em Eventos</h1>
+                <div class="col-lg-6">
+                    <h4>Data de Nascimento: 06/11/1984</h4>
+                    <h4>Endereço: Avenida Getúlio Vargas Centro, Criciúma - SC</h4>
+                    <h4>Naturalidade: Brasileiro</h4>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Telefone: (48) 99918-4588</h4>
+                    <h4>Email: ronchipaes@yahoo.com</h4>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="contato" class="row">
+            <div class="col-lg-12">
+                <h1>Contato</h1>
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-4">
+                        <form id="contato" method="POST" action="http://contato-twsatc.rhcloud.com/contato-api/email">
+                            <div class="form-group">
+                                <label for="nome">Nome: </label>
+                                <input type="text" id="nome" name="nome" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail: </label>
+                                <input type="email" id="email" name="email" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone: </label>
+                                <input type="tel" id="telefone" name="telefone" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem: </label>
+                                <textarea id="mensagem" class="form-control" name="mensagem"></textarea>
+                            </div>
+                            <input id="para" name="para" type="hidden" value="ronchipaes@yahoo.com.br" />
+                            <input class="btn btn-primary btn-block" type="submit" />
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
