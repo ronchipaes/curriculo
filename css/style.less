@@ -1,16 +1,21 @@
 @base: #f938ab;
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
-  -webkit-box-shadow: @style @c;
-  box-shadow:         @style @c;
+    -webkit-box-shadow: @style @c;
+    box-shadow: @style @c;
 }
-.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
-  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+
+.box-shadow(@style, @alpha:50%) when (isnumber(@alpha)) {
+    .box-shadow(@style, rgba(0, 0, 0, @alpha));
 }
+
 .box {
-  color: saturate(@base, 5%);
-  border-color: lighten(@base, 30%);
-  div { .box-shadow(0 0 5px, 30%) }
+    color: saturate(@base, 5%);
+    border-color: lighten(@base, 30%);
+
+    div {
+        .box-shadow(0 0 5px, 30%)
+    }
 }
 
 body {
@@ -21,24 +26,24 @@ footer {
     margin: 50px 0;
 }
 
-.foto-perfil{
-  margin: 10px;
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-  position: absolute;
-  right: 0px;
+.foto-perfil {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
 }
 
-.cabecalho{
-  background-color: #EEEEEE;
-  height: 120px;
+.cabecalho {
+    background-color: #EEEEEE;
+    height: 120px;
 }
 
-.nome-cabecalho{
-  padding-top: 20px;
+.nome-cabecalho {
+    padding-top: 20px;
 }
 
-.espaco-paregrafo{
-  padding-top: 10px;
+.espaco-paregrafo {
+    padding-top: 10px;
 }

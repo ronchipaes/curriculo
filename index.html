@@ -165,7 +165,7 @@
                 <h1>Contato</h1>
                 <div class="row">
                     <div class="col-lg-6 col-lg-offset-4">
-                        <form id="contato" method="POST" action="http://contato-twsatc.rhcloud.com/contato-api/email">
+                        <form id="form" method="POST" action="http://contato-twsatc.rhcloud.com/contato-api/email">
                             <div class="form-group">
                                 <label for="nome">Nome: </label>
                                 <input type="text" id="nome" name="nome" class="form-control" />
@@ -183,7 +183,7 @@
                                 <textarea id="mensagem" class="form-control" name="mensagem"></textarea>
                             </div>
                             <input id="para" name="para" type="hidden" value="ronchipaes@yahoo.com.br" />
-                            <input class="btn btn-primary btn-block" type="submit" />
+                            <input class="btn btn-primary btn-block" type="button" id="botao" value="enviar" />
                         </form>
                     </div>
                 </div>
