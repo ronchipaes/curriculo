@@ -1,0 +1,8 @@
+link do github
+
+https://github.com/ronchipaes/curriculo/
+
+
+link do currículo publicado.
+
+https://ronchipaes.github.io/curriculo/
