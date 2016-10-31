@@ -65,7 +65,7 @@ $(function() {
 
             if (cont == 0) {
                 $.ajax({
-                    url: 'http://contato-twsatc.rhcloud.com/contato-api/email',
+                    url: 'https://contato-twsatc.rhcloud.com/contato-api/email',
                     type: 'post',
                     dataType: 'json',
                     data: $('#form').serialize(),
