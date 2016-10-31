@@ -41,6 +41,11 @@ $(function() {
                         "padding": "2px"
                     });
                     cont++;
+                } else {
+                    $(this).css({
+                        "border": "1px solid #ccc",
+                        "padding": "2px"
+                    });
                 }
             });
             $("#form textarea").each(function() {
@@ -67,8 +72,6 @@ $(function() {
                     success: function(data) {
                         if (data) {
                             alert("Informações enviadas com sucesso...");
-
-                            // limpar os campos....
                             $("#form input").each(function() {
                                 $(this).val("")
                             });
